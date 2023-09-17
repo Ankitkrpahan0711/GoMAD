@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery- AR Clothing</title>
+    <!-- Add the Slick Carousel CSS and jQuery -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <h1 style="text-align: center;">AR Clothing</h1>
+    
+    
+    <div class="gallery-container">
+        <!-- Add your gallery images here -->
+        <div><img src="assets/img/portfolio/Gallary/ar-cloth/1.jpg" alt="Image 1" width="100%" height="100%"></div>
+        <div><img src="assets/img/portfolio/Gallary/ar-cloth/2.jpg" alt="Image 1"></div>
+        <div><img src="assets/img/portfolio/Gallary/ar-cloth/3.jpg" alt="Image 1"></div>
+        <div><img src="assets/img/portfolio/Gallary/ar-cloth/1.jpg" alt="Image 1"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Initialize the Slick Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('.gallery-container').slick({
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+        });
+    </script>
+</body>
+</html>
