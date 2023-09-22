@@ -336,7 +336,7 @@ h6 {
 #hero {
   width: 100%;
   position: relative;
-  background: url("../img/hero-bg.png") center bottom no-repeat;
+  background: url("../img/hero-bg3.png") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
 }
@@ -387,7 +387,7 @@ h6 {
 }
 
 #hero .hero-info h2 {
-  color: #fff;
+  color: #000000;
   margin-bottom: 40px;
   font-size: 48px;
   font-weight: 700;
@@ -416,7 +416,7 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin: 0 20px 20px 0;
-  color: #fff;
+  color: #130b0b;
 }
 
 #hero .hero-info .btn-get-started {
@@ -427,12 +427,12 @@ h6 {
 
 #hero .hero-info .btn-get-started:hover {
   background: none;
-  border-color: #fff;
+  border-color: #ff3806;
   color: #fff;
 }
 
 #hero .hero-info .btn-services {
-  border: 2px solid #fff;
+  border: 2px solid #ff6600;
 }
 
 #hero .hero-info .btn-services:hover {
