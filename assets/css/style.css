@@ -961,7 +961,8 @@ section {
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This property will crop and center the image */
+  aspect-ratio: 5/4;
+  object-fit: contain; /* This property will crop and center the image */
 }
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
