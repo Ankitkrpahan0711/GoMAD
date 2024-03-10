@@ -343,7 +343,7 @@ h6 {
 }
 
 /*newly addeed*/
-.slider {
+#hero .slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -352,7 +352,7 @@ h6 {
   overflow: hidden;
 }
 
-.slide {
+#hero .slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -362,10 +362,20 @@ h6 {
   display: none;
 }
 
-/* .container {
+.container {
   position: relative;
-  z-index: 11111; /* Ensure the text appears above the images */
-/* } */ */
+  z-index: 1; /* Ensure the container appears above the images */
+}
+
+.hero-info {
+  padding-top: 50px; /* Add top padding to maintain spacing */
+  padding-left: 100px;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 20px; /* Add bottom margin to maintain spacing */
+}
 /*till here*/
 
 #hero .image-slide{
