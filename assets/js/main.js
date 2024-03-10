@@ -265,20 +265,67 @@
   /*
   *background slider
   */
+  // let slideIndex = 0;
+  // const slides = document.getElementsByClassName("slide");
+  
+  // function showSlides() {
+  //     for (let i = 0; i < slides.length; i++) {
+  //         slides[i].style.display = "none";  
+  //     }
+  //     slideIndex++;
+  //     if (slideIndex > slides.length) {
+  //         slideIndex = 1;
+  //     }    
+  //     slides[slideIndex - 1].style.display = "block";  
+  //     setTimeout(showSlides, 5000); // Change image every 2 seconds
+  // }
+  
+  // showSlides();
+  
+
   let slideIndex = 0;
-  const slides = document.getElementsByClassName("slide");
-  
-  function showSlides() {
-      for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-          slideIndex = 1;
-      }    
-      slides[slideIndex - 1].style.display = "block";  
-      setTimeout(showSlides, 5000); // Change image every 2 seconds
-  }
-  
-  showSlides();
-  
+const slides = document.getElementsByClassName("slide");
+const textContent = ["We provide solutions for your business!", "Discover our services and grow your business!", "Biggest Ever Holi Fest!!"];
+const buttonContent = ["Get Started", "Learn More", "Book Tickets Now"];
+const buttonActions = ["#about", "#services"];
+const heroText = document.querySelector('.hero-info h2');
+const getStartedBtn = document.querySelector('.btn-get-started');
+const servicesBtn = document.querySelector('.btn-services');
+const indicatorsContainer = document.querySelector(".carousel-indicators");
+
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }    
+    slides[slideIndex - 1].style.display = "block";
+
+    // Update indicators
+    indicatorsContainer.innerHTML = "";
+    for (let i = 0; i < slides.length; i++) {
+        const indicator = document.createElement("span");
+        indicator.classList.add("indicator");
+        if (i === slideIndex - 1) {
+            indicator.classList.add("active");
+        }
+        indicatorsContainer.appendChild(indicator);
+    }
+
+    // Update text content
+    heroText.textContent = textContent[slideIndex - 1];
+
+    // Update button content and actions
+    getStartedBtn.textContent = buttonContent[slideIndex - 1];
+    getStartedBtn.href = buttonActions[slideIndex - 1];
+    
+    servicesBtn.style.display = (slideIndex === slides.length) ? 'none' : 'inline'; // Hide the services button on the last slide
+
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+showSlides();
+
