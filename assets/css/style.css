@@ -342,6 +342,32 @@ h6 {
   padding: 200px 0 120px 0;
 }
 
+/*newly addeed*/
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  display: none;
+}
+
+/* .container {
+  position: relative;
+  z-index: 11111; /* Ensure the text appears above the images */
+/* } */ */
+/*till here*/
+
 #hero .image-slide{
   z-index: 000;
   position: absolute;
@@ -551,6 +577,20 @@ section {
     display: inline-block;
   }
 }
+
+/* Background slider */
+/* .slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+} */
+
 
 /* About Us Section
 --------------------------------*/
