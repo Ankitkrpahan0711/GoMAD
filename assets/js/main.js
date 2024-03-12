@@ -322,7 +322,7 @@ function showSlides() {
     getStartedBtn.textContent = buttonContent[slideIndex - 1];
     getStartedBtn.href = buttonActions[slideIndex - 1];
     
-    servicesBtn.style.display = (slideIndex === slides.length) ? 'none' : 'inline'; // Hide the services button on the last slide
+    // servicesBtn.style.display = (slideIndex === slides.length) ? 'none' : 'inline'; // Hide the services button on the last slide
 
     setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
