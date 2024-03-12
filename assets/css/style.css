@@ -400,6 +400,42 @@ h2 {
   background-color: #333;
 }
 
+#hero .hero-info .btn-get-started,
+#hero .hero-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #130b0b;
+}
+
+#hero .hero-info .btn-get-started {
+  background: rgba(245, 107, 15, 0.945);
+  border: 2px solid rgba(245, 107, 15, 0.945);
+  color: #fff;
+}
+
+#hero .hero-info .btn-get-started:hover {
+  background: none;
+  border-color: #ff3806;
+  color: #000000;
+}
+
+#hero .hero-info .btn-services {
+  border: 2px solid #ff6600;
+}
+
+#hero .hero-info .btn-services:hover {
+  background: rgba(245, 107, 15, 0.945);
+  border-color: rgba(245, 107, 15, 0.945);
+  color: #fff;
+}
+
 #hero .image-slide{
   z-index: 000;
   position: absolute;
@@ -474,41 +510,7 @@ h2 {
   }
 }
 
-#hero .hero-info .btn-get-started,
-#hero .hero-info .btn-services {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 0 20px 20px 0;
-  color: #130b0b;
-}
 
-#hero .hero-info .btn-get-started {
-  background: rgba(245, 107, 15, 0.945);
-  border: 2px solid rgba(245, 107, 15, 0.945);
-  color: #fff;
-}
-
-#hero .hero-info .btn-get-started:hover {
-  background: none;
-  border-color: #ff3806;
-  color: #000000;
-}
-
-#hero .hero-info .btn-services {
-  border: 2px solid #ff6600;
-}
-
-#hero .hero-info .btn-services:hover {
-  background: rgba(245, 107, 15, 0.945);
-  border-color: rgba(245, 107, 15, 0.945);
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Sections
