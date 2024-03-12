@@ -344,8 +344,8 @@ h6 {
 
 /*newly addeed*/
 #hero .slider-container {
-  height: 100px; /* Set a fixed height for the slider container */
-  overflow: hidden; /* Hide overflow content */
+  height: 150px; /* Set a fixed height for the slider container */
+  overflow:hidden; /* Hide overflow content */
 }
 
 #hero .slider {
@@ -362,9 +362,9 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 120%;
   object-fit:fill; /* Ensures the image covers the entire area */
-  display: none;
+  display:none;
 }
 
 .container {
