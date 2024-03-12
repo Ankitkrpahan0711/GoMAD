@@ -356,8 +356,8 @@ function showSlides() {
     // Update text content and button visibility based on slideIndex
     heroText.textContent = textContent[slideIndex - 1].text;
     if (textContent[slideIndex - 1].showButtons) {
-        getStartedBtn.style.display = "inline";
-        servicesBtn.style.display = "inline";
+        getStartedBtn.style.display = "inline-block";
+        servicesBtn.style.display = "inline-block";
     } else {
         getStartedBtn.style.display = "none";
         servicesBtn.style.display = "none";
