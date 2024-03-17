@@ -368,14 +368,14 @@ h6 {
   object-fit: cover; /* Ensures the image covers the entire area */
 }
 
-/* .container {
+.container {
   position: relative;
   z-index: 1; 
-} */
+}
 
-/* .hero-info {
+.hero-info {
   padding-top: 50px; 
-} */
+}
 
 h2 {
   margin-bottom: 20px; /* Add bottom margin to maintain spacing */
