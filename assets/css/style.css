@@ -334,7 +334,7 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+ /* #hero {
   width: 100%;
   position: relative;
   background-size: cover;
@@ -343,8 +343,8 @@ h6 {
 }
 
 #hero .slider-container {
-  height: 100px; /* Set a fixed height for the slider container */
-  overflow: hidden; /* Hide overflow content */
+  height: 100px; 
+  overflow: hidden;
 }
 
 #hero .slider {
@@ -354,9 +354,9 @@ h6 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  display: flex; /* Use flexbox for centering images */
-  justify-content: center; /* Center images horizontally */
-  align-items: center; /* Center images vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 #hero .slide {
@@ -365,7 +365,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area */
+  object-fit: cover; 
 }
 
 .container {
@@ -378,10 +378,10 @@ h6 {
 }
 
 h2 {
-  margin-bottom: 20px; /* Add bottom margin to maintain spacing */
+  margin-bottom: 20px; 
 }
 
-/* Carousel indicators */
+
 .carousel-indicators {
   position: absolute;
   bottom: 20px;
@@ -403,7 +403,147 @@ h2 {
   background-color: #333;
 }
 
+
+
+#hero .hero-info .btn-get-started,
+#hero .hero-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #130b0b;
+  position:absolute;
+}
+
+#hero .hero-info .btn-get-started {
+  background: rgba(245, 107, 15, 0.945);
+  border: 2px solid rgba(245, 107, 15, 0.945);
+  color: #fff;
+}
+
+#hero .hero-info .btn-get-started:hover {
+  background: none;
+  border-color: #ff3806;
+  color: #000000;
+}
+
+#hero .hero-info .btn-services {
+  border: 2px solid #ff6600;
+}
+
+#hero .hero-info .btn-services:hover {
+  background: rgba(245, 107, 15, 0.945);
+  border-color: rgba(245, 107, 15, 0.945);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .btn-get-started,
+  .btn-services {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  #hero {
+    padding: 140px 0 60px 0;
+  }
+}
+
+@media (max-width: 574px) {
+  #hero {
+    padding: 100px 0 20px 0;
+  }
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+@media (max-width: 991px) {
+  #hero .hero-img {
+    width: 100%;
+    height: 100%;
+    float: none;
+    margin: 0 auto 25px auto;
+  }
+}
+
+#hero .hero-info {
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 991px) {
+  #hero .hero-info {
+    width: 80%;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero .hero-info {
+    width: 100%;
+  }
+}
+
+#hero .hero-info h2 {
+  color: #000000;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero .hero-info h2 span {
+  color: rgba(245, 107, 15, 0.945);
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  #hero .hero-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+} */
+
+#hero {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  padding: 80px 0 120px 0;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  z-index: 1; 
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px; 
+}
+
+h2 {
+  margin-bottom: 20px; /* Add bottom margin to maintain spacing */
+}
+
 /* Button styles */
+
 #hero .hero-info .btn-get-started,
 #hero .hero-info .btn-services {
   font-family: "Montserrat", sans-serif;
@@ -514,7 +654,6 @@ h2 {
     margin-bottom: 30px;
   }
 }
-
 
 
 /*--------------------------------------------------------------
