@@ -338,7 +338,8 @@ h6 {
   width: 100%;
   position: relative;
   background-size: cover;
-  padding: 200px 0 120px 0;
+  padding: 80px 0 120px 0;
+  object-fit: cover;
 }
 
 #hero .slider-container {
@@ -364,17 +365,17 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: fill; /* Ensures the image covers the entire area */
+  object-fit: cover; /* Ensures the image covers the entire area */
 }
 
-.container {
+/* .container {
   position: relative;
-  z-index: 1; /* Ensure the container appears above the images */
-}
+  z-index: 1; 
+} */
 
-.hero-info {
-  padding-top: 50px; /* Add top padding to maintain spacing */
-}
+/* .hero-info {
+  padding-top: 50px; 
+} */
 
 h2 {
   margin-bottom: 20px; /* Add bottom margin to maintain spacing */
@@ -460,9 +461,10 @@ h2 {
   }
 }
 
-#hero .hero-img {
-  width: 50%;
-  float: right;
+#hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* This property ensures the image covers the entire container */
 }
 
 @media (max-width: 991px) {
