@@ -332,38 +332,49 @@
 
 // showSlides();
 
-let slideIndex = 0;
-const slides = document.getElementsByClassName("slide");
-const textContent = [
-    { text: "We provide solutions for your business!", showButtons: true },
-    { text: "", showButtons: false },
-    { text: "Discover our services and grow your business!", showButtons: true }
-];
-const heroText = document.querySelector('.hero-info h2');
-const getStartedBtn = document.querySelector('.btn-get-started');
-const servicesBtn = document.querySelector('.btn-services');
+// let slideIndex = 0;
+// const slides = document.getElementsByClassName("slide");
+// const textContent = [
+//     { text: "We provide solutions for your business!", showButtons: true },
+//     { text: "", showButtons: false },
+//     { text: "Discover our services and grow your business!", showButtons: true }
+// ];
+// const heroText = document.querySelector('.hero-info h2');
+// const getStartedBtn = document.querySelector('.btn-get-started');
+// const servicesBtn = document.querySelector('.btn-services');
 
-function showSlides() {
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }    
-    slides[slideIndex - 1].style.display = "block";
+// function showSlides() {
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";  
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) {
+//         slideIndex = 1;
+//     }    
+//     slides[slideIndex - 1].style.display = "block";
 
-    // Update text content and button visibility based on slideIndex
-    heroText.textContent = textContent[slideIndex - 1].text;
-    if (textContent[slideIndex - 1].showButtons) {
-        getStartedBtn.style.display = "inline-block";
-        servicesBtn.style.display = "inline-block";
-    } else {
-        getStartedBtn.style.display = "none";
-        servicesBtn.style.display = "none";
-    }
+//     // Update text content and button visibility based on slideIndex
+//     heroText.textContent = textContent[slideIndex - 1].text;
+//     if (textContent[slideIndex - 1].showButtons) {
+//         getStartedBtn.style.display = "inline-block";
+//         servicesBtn.style.display = "inline-block";
+//     } else {
+//         getStartedBtn.style.display = "none";
+//         servicesBtn.style.display = "none";
+//     }
 
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
-}
+//     setTimeout(showSlides, 4000); // Change image every 2 seconds
+// }
 
-showSlides();
+// showSlides();
+
+
+//vesrsion 22-02-24
+
+$(document).ready(function(){
+  $('.carousel').carousel({
+    interval: 5000, // 5 seconds
+    pause: "hover",
+    wrap: true
+  });
+});

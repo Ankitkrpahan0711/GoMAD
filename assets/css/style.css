@@ -525,6 +525,14 @@ h2 {
   object-fit: cover;
 }
 
+
+.carousel-item img {
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .container {
   position: relative;
   z-index: 1; 
